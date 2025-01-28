@@ -88,7 +88,7 @@
 }
 
 .button-link span:hover {
-    color: var(--button-hover);
+    color: var(--primary-color);
 }
 
 /* Responsividade para telas menores */
