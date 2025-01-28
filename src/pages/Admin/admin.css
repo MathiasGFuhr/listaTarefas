@@ -1,0 +1,192 @@
+/* admin.css */
+
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.admin-container h1 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+    transition: border-color 0.3s;
+}
+
+textarea:focus {
+    border-color: var(--secondary-color);
+}
+
+button {
+    padding: 10px 15px;
+    background: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: var(--button-hover);
+}
+
+.list {
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-top: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+article p {
+    font-size: 1rem;
+    color: #333;
+}
+
+article div {
+    display: flex;
+    gap: 10px;
+}
+
+article button {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+article button:hover {
+    opacity: 0.8;
+}
+
+.btn-delete {
+    background: #ff6b6b;
+    color: white;
+}
+
+.btn-delete:hover {
+    background: #e25555;
+}
+
+.btn-logout {
+    position: absolute;
+    bottom: 6%;
+    left: 4%;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    border: 0;
+    transition: background-color 0.3s;
+    background-color: rgba(219, 38, 41, 0.4);
+    color: #fafafa;
+}
+
+
+
+.btn-logout:hover {
+    background: rgba(219, 38, 41, 1);
+    color: #fff;
+}
+
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Modal */
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+  }
+  
+  .modal h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+  }
+  
+  .modal p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Botões do Modal */
+  .modal-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  
+  .btn-confirm {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-confirm:hover {
+    background: var(--button-hover);
+  }
+  
+  .btn-cancel {
+    background: #ff6b6b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-cancel:hover {
+    background: #e25555;
+  }
+  

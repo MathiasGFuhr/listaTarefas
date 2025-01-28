@@ -1,0 +1,108 @@
+/* home.css */
+
+/* Container principal da Home */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Título */
+.home-container h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Subtítulo/descrição */
+.home-container span {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Formulário */
+.form {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 600px;
+    gap: 1rem;
+}
+
+/* Inputs (email e senha) */
+.form input {
+    padding: 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: box-shadow 0.2s ease;
+}
+
+.form input::placeholder {
+    color: #999;
+}
+
+/* Foco nos inputs */
+.form input:focus {
+    box-shadow: 0 0 0 3px rgba(101, 223, 201, 0.5);
+}
+
+/* Botão de submit */
+.form button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+/* Hover do botão */
+.form button:hover {
+    background-color: var(--button-hover);
+}
+
+/* Efeito de clique no botão */
+.form button:active {
+    transform: scale(0.97);
+}
+
+.button-link {
+    text-decoration: none;
+    color: #fff;
+    margin-top: 1rem;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.button-link span:hover {
+    color: var(--button-hover);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 480px) {
+    .form {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .home-container h1 {
+        font-size: 2rem;
+    }
+
+    .home-container span {
+        font-size: 1rem;
+    }
+}
