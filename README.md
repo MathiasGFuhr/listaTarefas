@@ -5,7 +5,7 @@ TaskManager é uma aplicação para gerenciamento de tarefas pessoais, onde os u
 ---
 
 ### 🚀 Acesse o projeto:
-🔗 [PrimeFlix - Clique aqui para acessar](https://primeflix-taupe.vercel.app/)
+🔗 [TaskManager - Clique aqui para acessar](https://lista-tarefas-orcin.vercel.app/)
 
 ---
 
